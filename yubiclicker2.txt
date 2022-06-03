@@ -22,7 +22,7 @@ Buttons
 		desc:Click on this yubi to get more yubis!
 		on click:anim icon wobble
 		on click:yield 1 yubi
-		on click:if (have rottenYubi and chance(1%)) yield 1 rottenYubi
+		on click:if (have goldenYubi and chance(1%)) yield 1 goldenYubi
 		icon:stuff/bunny.png
 		no text
 		class:bigButton hasFlares
