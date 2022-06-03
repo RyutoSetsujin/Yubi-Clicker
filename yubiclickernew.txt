@@ -38,7 +38,7 @@ Resources
 		class:noBackground
 		show earned
 		
-	*goldenYubi
+	*goldenyubi
 		name:Golden yubi|Golden yubis
 		desc:These golden yubis are quite rare, but they help a lot in the long run!
 		icon:icons[0,1]
