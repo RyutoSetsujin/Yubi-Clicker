@@ -1,9 +1,9 @@
 Let's make a game!
-	name:Bunny Clicker
-	by:Orteil
-	desc:This is a simple idle game to showcase some of the basic functionalities of Idle Game Maker.<//>Make bunnies and shoot for the stars!
-	created:25/7/2017
-	updated:24/10/2017
+	name:Yubi Clicker
+	by:Ryuto Setsujin
+	desc:Let's just say you're Korone, and your yubi addiction has gotten way too big.<//>Get all the yubis!
+	created:2/6/2022
+	updated:3/6/2022
 	version:1
 
 Settings
@@ -18,11 +18,11 @@ Layout
 		
 Buttons
 	*bunnyButton
-		name:Make a bunny
-		desc:Click this little bunny to get more bunnies!
+		name:Collect a yubi
+		desc:Click on this yubi to get more yubis!
 		on click:anim icon wobble
-		on click:yield 1 bunny
-		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		on click:yield 1 yubi
+		on click:if (have rottenYubi and chance(1%)) yield 1 rottenYubi
 		icon:stuff/bunny.png
 		no text
 		class:bigButton hasFlares
@@ -31,14 +31,14 @@ Buttons
 		tooltip class:red
 		
 Resources
-	*bunny|bunnies
-		name:Bunny|Bunnies
-		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
+	*yubi|yubis
+		name:Yubi|Yubis
+		desc:These are your yubis. You can use them to purchase things. Your goal is to collect as many yubis as possible!
 		icon:icons[0,0]
 		class:noBackground
 		show earned
 		
-	*goldenCarrot|goldenCarrots
+	*rottenYubi|rottenYubis
 		name:Golden carrot|Golden carrots
 		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
 		icon:icons[0,1]
@@ -46,7 +46,7 @@ Resources
 		hidden when 0
 		
 Shinies
-	*luckyBunny
+	*goldenListener
 		on click:log Woop
 		movement:onRight moveLeft fade bounce:0.05
 		frequency:60
@@ -59,12 +59,12 @@ Shinies
 			if (chance(25%))
 				//get at least 7, or between 1 and 3 minutes of our bunny production
 				$amount=max(7,random(bunnies:ps*60*1,bunnies:ps*60*3))*$boost
-				toast The lucky bunny grants you<//><b>[$amount] bunnies</b>.
-				yield $amount bunnies
+				toast Yubi yubi! The golden listener gives you<//><b>[$amount] yubis</b>.
+				yield $amount yubis
 			else
 				$amount=1*$boost
-				toast The lucky bunny grants you<//><b>[$amount] golden carrot[s?$amount]</b>!
-				yield $amount goldenCarrot
+				toast The golden listener gives you<//><b>[$amount] rotten yubis[s?$amount]</b>!
+				yield $amount rottenYubi
 			end
 		end
 
