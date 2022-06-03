@@ -31,14 +31,14 @@ Buttons
 		tooltip class:red
 		
 Resources
-	*yubi|yubis
+	*yubi
 		name:Yubi|Yubis
 		desc:These are your yubis. You can use them to purchase things. Your goal is to collect as many yubis as possible!
 		icon:icons[0,0]
 		class:noBackground
 		show earned
 		
-	*goldenYubi|goldenYubis
+	*goldenYubi
 		name:Golden yubi|Golden yubis
 		desc:These golden yubis are quite rare, but they help a lot in the long run!
 		icon:icons[0,1]
