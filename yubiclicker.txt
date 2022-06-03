@@ -39,8 +39,8 @@ Resources
 		show earned
 		
 	*rottenYubi|rottenYubis
-		name:Golden carrot|Golden carrots
-		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
+		name:Rotten yubi|Rotten yubis
+		desc:These rotten yubis are quite rare, but they help a lot in the long run!
 		icon:icons[0,1]
 		class:noBackground
 		hidden when 0
